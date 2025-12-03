@@ -179,9 +179,17 @@ header p {
 
 .latest-update {
     margin-top: 10px;
-    width: auto;
-    height: 450px;
+    width: 300px; 
+    height: 280px; 
     box-shadow: var(--shadow);
+    max-width: fit-content;
+    overflow: hidden;
+}
+
+.latest-update img {
+    max-width: 100%;
+    height: auto;   
+    display: block;  
 }
 
 /* Countdown Timer */
@@ -461,6 +469,8 @@ footer p {
     margin: 8px 0;
 }
 
+/* --- Media Queries --- */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
@@ -492,7 +502,7 @@ footer p {
         padding: 14px 30px;
         font-size: 1em;
     }
-
+   
     .admin-grid {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 10px;
