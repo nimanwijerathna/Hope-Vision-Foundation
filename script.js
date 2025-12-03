@@ -10,17 +10,15 @@ const renderAdminCards = (data) => {
         let contactHTML = '';
         let searchContactData = '';
 
-        // --- 1. NEW LOGIC: Loop through all contacts in the area ---
         if (admin.contacts && admin.contacts.length > 0) {
             admin.contacts.forEach(contact => {
                 const contactName = contact.name;
                 const pNum = contact.phone;
 
-                // Add name and phone to the search data string
                 searchContactData += `${contactName.toLowerCase()} ${pNum ? pNum.toLowerCase() : ''} `;
 
                 if (pNum) {
-                    const phoneDigits = pNum.replace(/[\s\+]/g, ''); // Clean number for links
+                    const phoneDigits = pNum.replace(/[\s\+]/g, ''); 
 
                     contactHTML += `
                         <p style="font-weight: 500; margin-bottom: 2px;">${contactName}</p>
@@ -31,7 +29,6 @@ const renderAdminCards = (data) => {
                         </p>
                     `;
                 } else {
-                    // Handle pending individual contacts
                     contactHTML += `
                         <p style="font-weight: 500; margin-bottom: 2px;">${contactName}</p>
                         <p class="contact-info text-muted" style="margin-bottom: 8px;">Contact details pending</p>
@@ -39,12 +36,9 @@ const renderAdminCards = (data) => {
                 }
             });
         } else if (admin.status === 'pending') {
-            // General fallback for pending areas with no contact data
             contactHTML = `<p class="contact-info text-muted">No contacts listed yet</p>`;
         }
-        // --- END NEW CONTACT LOGIC ---
 
-        // 2. Add Mailto Link
         let mailHTML = '';
         if (admin.mailto) {
             mailHTML = `
@@ -56,7 +50,6 @@ const renderAdminCards = (data) => {
             `;
         }
 
-        // 3. Location status text/link
         let locationHTML = ''; 
 
         if (admin.location === 'pending') {
@@ -75,7 +68,6 @@ const renderAdminCards = (data) => {
                 </p>
             `;
         } else if (admin.location && admin.location.startsWith('http')) {
-            // Corrected map link generation
             locationHTML = `
                 <p style="margin-top: 5px;">
                     <a href="${admin.location}" target="_blank"
@@ -87,8 +79,6 @@ const renderAdminCards = (data) => {
         }
 
         const searchData = `${admin.area.toLowerCase()} ${searchContactData} ${admin.status} ${admin.location}`;
-
-        // Create the HTML card string
         const cardHTML = `
             <div class="admin-card" data-search="${searchData}">
                 <strong>🗺️ ${admin.area}</strong>
@@ -102,12 +92,9 @@ const renderAdminCards = (data) => {
     });
 };
 
-// Initial render using the global variable from data.js
+// render using the global variable from data.js
 renderAdminCards(ADMIN_CONTACT_DATA);
 
-// ----------------------------------------------------------------------------------
-// LIVE SEARCH FUNCTION (Correct)
-// ----------------------------------------------------------------------------------
 const searchBar = document.getElementById('search-bar');
 
 searchBar.addEventListener('keyup', function () {
@@ -125,9 +112,7 @@ searchBar.addEventListener('keyup', function () {
     });
 });
 
-// ----------------------------------------------------------------------------------
-// Countdown Timer (Correct)
-// ----------------------------------------------------------------------------------
+// Countdown Timer 
 function updateCountdown() {
     const targetDate = new Date('2025-12-15T20:00:00').getTime();
     const now = new Date().getTime();
@@ -157,7 +142,6 @@ function updateCountdown() {
                 </div>
             `;
 
-    // Ensure you have an element with id="countdown" in your HTML
     const countdownElement = document.getElementById('countdown');
     if (countdownElement) {
         countdownElement.innerHTML = countdownHtml;

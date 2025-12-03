@@ -86,7 +86,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'pending',
         location: 'pending',
         contacts: [
-            { name: 'Unknown', phone: '077 279 8149' }
+            { name: 'Angela', phone: '077 279 8149' }
         ]
     },
 
@@ -220,5 +220,4 @@ const ADMIN_CONTACT_DATA = [
         location: 'whatsapp',
         mailto: 'foundationhopevision@gmail.com',
     }
-    // Add the rest of your pending areas here...
 ];
