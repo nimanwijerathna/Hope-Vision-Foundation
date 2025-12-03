@@ -3,7 +3,7 @@ const ADMIN_CONTACT_DATA = [
     {
         area: 'Kadawatha',
         status: 'confirmed',
-        location: 'https://maps.app.goo.gl/pgU7i5HhdJnRLddh9',
+        location: 'pending',
         contacts: [
             { name: 'Sewwandi Mayadunna', phone: '071 362 8859' },
             { name: 'Gayashi Hasinika', phone: '076 134 3005' },
@@ -28,7 +28,7 @@ const ADMIN_CONTACT_DATA = [
     {
         area: 'Gampaha',
         status: 'confirmed',
-        location: 'https://maps.app.goo.gl/pgU7i5HhdJnRLddh9',
+        location: 'pending',
         contacts: [
             { name: 'Poorna', phone: '075 737 4508' },
             { name: 'Thedani Kusanga', phone: '078 914 0936' },
