@@ -31,7 +31,7 @@ const ADMIN_CONTACT_DATA = [
         location: 'pending',
         contacts: [
             { name: 'Poorna', phone: '075 737 4508' },
-            { name: 'Thedani Kusanga', phone: '078 914 0936' },
+            { name: 'Vibodha', phone: '074 017 9049' },
             { name: 'Prathibha Indumini', phone: '071 250 7238' },
             { name: 'Unknown', phone: '075 883 0172' }
         ]
@@ -75,7 +75,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'pending',
         location: 'pending',
         contacts: [
-            { name: 'Unknown', phone: '077 279 8149' },
+            { name: 'Angela', phone: '077 279 8149' },
             { name: 'Unknown', phone: '076 647 4439' }
         ]
     },
