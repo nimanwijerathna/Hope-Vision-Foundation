@@ -5,9 +5,9 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Sewwandi Mayadunna', phone: '071 362 8859' },
-            { name: 'Gayashi Hasinika', phone: '076 134 3005' },
-            { name: 'Deepadi Gunawardhane', phone: '075 829 3721' }
+            { name: 'Sewwandi Mayadunna', phone: '+94 71 362 8859' },
+            { name: 'Gayashi Hasinika', phone: '+94 76 134 3005' },
+            { name: 'Deepadi Gunawardhane', phone: '+94 75 829 3721' }
         ]
     },
 
@@ -19,7 +19,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'pending',
         location: 'pending',
         contacts: [
-            { name: 'Unknown', phone: '072 403 6164' }
+            { name: 'Unknown', phone: '+94 72 403 6164' }
 
         ]
     },
@@ -30,10 +30,10 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Poorna', phone: '075 737 4508' },
-            { name: 'Vibodha', phone: '074 017 9049' },
-            { name: 'Prathibha Indumini', phone: '071 250 7238' },
-            { name: 'Unknown', phone: '075 883 0172' }
+            { name: 'Poorna', phone: '+94 75 737 4508' },
+            { name: 'Vibodha', phone: '+94 74 017 9049' },
+            { name: 'Prathibha Indumini', phone: '+94 71 250 7238' },
+            { name: 'Unknown', phone: '+94 75 883 0172' }
         ]
     },
 
@@ -43,8 +43,8 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Angela', phone: '077 279 8149' },
-            { name: 'Hoshani Peiris', phone: '076 647 4439' }
+            { name: 'Angela', phone: '+94 77 279 8149' },
+            { name: 'Hoshani Peiris', phone: '+94 76 647 4439' }
         ]
     },
 
@@ -54,8 +54,8 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Sasindu Prabhashwara', phone: '071 654 3532' },
-            { name: 'Chamidu Laksitha', phone: '071 654 3532' }
+            { name: 'Sasindu Prabhashwara', phone: '+94 71 654 3532' },
+            { name: 'Chamidu Laksitha', phone: '+94 71 654 3532' }
         ]
     },
 
@@ -65,7 +65,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Nethmi Silva', phone: '076 983 9613' }
+            { name: 'Nethmi Silva', phone: '+94 76 983 9613' }
         ]
     },
 
@@ -75,8 +75,8 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Angela', phone: '077 279 8149' },
-            { name: 'Unknown', phone: '076 647 4439' }
+            { name: 'Angela', phone: '+94 77 279 8149' },
+            { name: 'Unknown', phone: '+94 76 647 4439' }
         ]
     },
 
@@ -86,7 +86,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Angela', phone: '077 279 8149' }
+            { name: 'Angela', phone: '+94 77 279 8149' }
         ]
     },
 
@@ -96,7 +96,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Buddhi Amalka', phone: '077 644 1640' }
+            { name: 'Buddhi Amalka', phone: '+94 77 644 1640' }
         ]
     },
 
@@ -106,7 +106,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Damith', phone: '071 017 0138' }
+            { name: 'Damith', phone: '+94 71 017 0138' }
         ]
     },
 
@@ -116,8 +116,8 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Damith', phone: '071 017 0138' },
-            { name: 'Unkown', phone: '072 929 7222' }
+            { name: 'Damith', phone: '+94 71 017 0138' },
+            { name: 'Unkown', phone: '+94 72 929 7222' }
         ]
     },
 
@@ -127,7 +127,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Gihan Kanishka', phone: '071 235 3890' }
+            { name: 'Gihan Kanishka', phone: '+94 71 235 3890' }
         ]
     },
 
@@ -137,7 +137,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Gihan Kanishka', phone: '071 235 3890' }
+            { name: 'Gihan Kanishka', phone: '+94 71 235 3890' }
         ]
     },
 
@@ -147,7 +147,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Thilaksha Dilrukshi', phone: '071 254 0196' }
+            { name: 'Thilaksha Dilrukshi', phone: '+94 71 254 0196' }
         ]
     },
 
@@ -157,7 +157,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Senithu Piumajith', phone: '076 811 0262' }
+            { name: 'Senithu Piumajith', phone: '+94 76 811 0262' }
         ]
     },
 
@@ -167,7 +167,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Dilon Perera', phone: '076 983 9613' }
+            { name: 'Dilon Perera', phone: '+94 76 983 9613' }
         ]
     },
 
@@ -177,7 +177,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Vidara Ovindi', phone: '076 400 9508' }
+            { name: 'Vidara Ovindi', phone: '+94 76 400 9508' }
         ]
     },
 
@@ -187,7 +187,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'pending',
         location: 'pending',
         contacts: [
-            { name: 'Unknown', phone: '076 549 4808' }
+            { name: 'Unknown', phone: '+94 76 549 4808' }
         ]
     },
 
@@ -197,9 +197,9 @@ const ADMIN_CONTACT_DATA = [
         status: 'pending',
         location: 'pending',
         contacts: [
-            { name: 'Unknown', phone: '076 805 9316' },
-            { name: 'Unknown', phone: '077 237 6085' },
-            { name: 'Unknown', phone: '076 650 6621' }
+            { name: 'Unknown', phone: '+94 76 805 9316' },
+            { name: 'Unknown', phone: '+94 77 237 6085' },
+            { name: 'Unknown', phone: '+94 76 650 6621' }
         ]
     },
 
@@ -209,7 +209,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'pending',
         location: 'pending',
         contacts: [
-            { name: 'Unknown', phone: '070 186 4043' }
+            { name: 'Unknown', phone: '+94 70 186 4043' }
         ]
     },
 
@@ -219,7 +219,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'pending',
         location: 'pending',
         contacts: [
-            { name: 'Unknown', phone: '076 750 4483' }
+            { name: 'Unknown', phone: '+94 76 750 4483' }
         ]
     },
 
@@ -229,7 +229,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Mihansa Sadewmi', phone: '074 000 4794' }
+            { name: 'Mihansa Sadewmi', phone: '+94 74 000 4794' }
         ]
     },
     
@@ -239,7 +239,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Dulneth Nimsara', phone: '076 285 6553' }
+            { name: 'Dulneth Nimsara', phone: '+94 76 285 6553' }
         ]
     },
     
@@ -249,7 +249,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Angela', phone: '077 279 8149' },
+            { name: 'Angela', phone: '+94 77 279 8149' },
         ]
     },
 
