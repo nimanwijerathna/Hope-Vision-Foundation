@@ -75,8 +75,8 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Angela', phone: '+94 77 279 8149' },
-            { name: 'Unknown', phone: '+94 76 647 4439' }
+            { name: 'Angela', phone: '+94 77 279 8149' }
+            
         ]
     },
 
