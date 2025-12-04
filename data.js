@@ -147,7 +147,8 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Thilaksha Dilrukshi', phone: '+94 71 254 0196' }
+            { name: 'Thilaksha Dilrukshi', phone: '+94 71 254 0196' }, 
+            { name: 'Gimhan', phone: '+94 70 469 4575' },
         ]
     },
 
