@@ -502,9 +502,4 @@ footer p {
         padding: 14px 30px;
         font-size: 1em;
     }
-   
-    .admin-grid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 10px;
-    }
 }

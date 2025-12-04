@@ -1,7 +1,7 @@
 const ADMIN_CONTACT_DATA = [
     // --- Kadawatha ---
     {
-        area: 'Kadawatha',
+        area: 'Kadawatha - කඩවත',
         status: 'confirmed',
         location: 'pending',
         contacts: [
@@ -15,7 +15,7 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Homagama ---
     {
-        area: 'Homagama',
+        area: 'Homagama - හෝමාගම',
         status: 'pending',
         location: 'pending',
         contacts: [
@@ -26,7 +26,7 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Gampaha ---
     {
-        area: 'Gampaha',
+        area: 'Gampaha - ගම්පහ',
         status: 'confirmed',
         location: 'pending',
         contacts: [
@@ -39,18 +39,18 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Wattala ---
     {
-        area: 'Wattala',
-        status: 'pending',
+        area: 'Wattala - වත්තල',
+        status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Unknown', phone: '077 279 8149' },
+            { name: 'Angela', phone: '077 279 8149' },
             { name: 'Hoshani Peiris', phone: '076 647 4439' }
         ]
     },
 
     // --- Matara ---
     {
-        area: 'Matara',
+        area: 'Matara - මාතර',
         status: 'confirmed',
         location: 'pending',
         contacts: [
@@ -61,7 +61,7 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Negombo ---
     {
-        area: 'Negombo',
+        area: 'Negombo - මීගමුව',
         status: 'confirmed',
         location: 'pending',
         contacts: [
@@ -71,8 +71,8 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Kiribathgoda ---
     {
-        area: 'Kiribathgoda',
-        status: 'pending',
+        area: 'Kiribathgoda - කිරිබත්ගොඩ',
+        status: 'confirmed',
         location: 'pending',
         contacts: [
             { name: 'Angela', phone: '077 279 8149' },
@@ -82,8 +82,8 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Ragama ---
     {
-        area: 'Ragama',
-        status: 'pending',
+        area: 'Ragama - රාගම',
+        status: 'confirmed',
         location: 'pending',
         contacts: [
             { name: 'Angela', phone: '077 279 8149' }
@@ -92,7 +92,7 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Mathugama ---
     {
-        area: 'Mathugama',
+        area: 'Mathugama - මතුගම',
         status: 'confirmed',
         location: 'pending',
         contacts: [
@@ -102,7 +102,7 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Kandy ---
     {
-        area: 'Kandy',
+        area: 'Kandy - නුවර',
         status: 'confirmed',
         location: 'pending',
         contacts: [
@@ -112,7 +112,7 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Kurunegala ---
     {
-        area: 'Kurunegala',
+        area: 'Kurunegala - කුරුණෑගල',
         status: 'confirmed',
         location: 'pending',
         contacts: [
@@ -121,9 +121,19 @@ const ADMIN_CONTACT_DATA = [
         ]
     },
 
-    // --- Minuwangoda / Udugampola ---
+    // --- Minuwangoda ---
     {
-        area: 'Minuwangoda / Udugampola',
+        area: 'Minuwangoda - මිනුවන්ගොඩ',
+        status: 'confirmed',
+        location: 'pending',
+        contacts: [
+            { name: 'Gihan Kanishka', phone: '071 235 3890' }
+        ]
+    },
+
+    // --- Udugampola ---
+    {
+        area: 'Udugampola - උඩුගම්පොළ',
         status: 'confirmed',
         location: 'pending',
         contacts: [
@@ -133,7 +143,7 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Kegalla ---
     {
-        area: 'Kegalle',
+        area: 'Kegalle - කෑගල්ල',
         status: 'confirmed',
         location: 'pending',
         contacts: [
@@ -143,17 +153,17 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Panadura ---
     {
-        area: 'Panadura',
+        area: 'Panadura - පානදුර',
         status: 'confirmed',
         location: 'pending',
         contacts: [
             { name: 'Senithu Piumajith', phone: '076 811 0262' }
         ]
     },
-    
+
     // --- Kelaniya ---
     {
-        area: 'Kelaniya',
+        area: 'Kelaniya - කැලණිය',
         status: 'confirmed',
         location: 'pending',
         contacts: [
@@ -161,9 +171,9 @@ const ADMIN_CONTACT_DATA = [
         ]
     },
 
-     // --- Nittambuwa ---
+    // --- Nittambuwa ---
     {
-        area: 'Nittambuwa',
+        area: 'Nittambuwa - නිට්ටඹුව',
         status: 'confirmed',
         location: 'pending',
         contacts: [
@@ -173,8 +183,8 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Veyangoda ---
     {
-        area: 'Veyangoda',
-        status: 'confirmed',
+        area: 'Veyangoda - වේයන්ගොඩ',
+        status: 'pending',
         location: 'pending',
         contacts: [
             { name: 'Unknown', phone: '076 549 4808' }
@@ -183,8 +193,8 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Anuradhapura ---
     {
-        area: 'Anuradhapura',
-        status: 'confirmed',
+        area: 'Anuradhapura - අනුරාධපුරය',
+        status: 'pending',
         location: 'pending',
         contacts: [
             { name: 'Unknown', phone: '076 805 9316' },
@@ -195,8 +205,8 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Halawatha ---
     {
-        area: 'Halawatha',
-        status: 'confirmed',
+        area: 'Halawatha - හලාවත',
+        status: 'pending',
         location: 'pending',
         contacts: [
             { name: 'Unknown', phone: '070 186 4043' }
@@ -205,11 +215,41 @@ const ADMIN_CONTACT_DATA = [
 
     // --- Hambanthota ---
     {
-        area: 'Hambanthota',
-        status: 'confirmed',
+        area: 'Hambanthota - හම්බන්තොට',
+        status: 'pending',
         location: 'pending',
         contacts: [
             { name: 'Unknown', phone: '076 750 4483' }
+        ]
+    },
+
+    // --- Maharagama ---
+    {
+        area: 'Maharagama - මහරගම',
+        status: 'confirmed',
+        location: 'pending',
+        contacts: [
+            { name: 'Mihansa Sadewmi', phone: '074 000 4794' }
+        ]
+    },
+    
+    // --- Kirindiwela ---
+    {
+        area: 'Kirindiwela - කිරිඳිවැල',
+        status: 'confirmed',
+        location: 'pending',
+        contacts: [
+            { name: 'Dulneth Nimsara', phone: '076 285 6553' }
+        ]
+    },
+    
+    // --- Borella ---
+    {
+        area: 'Borella - බොරැල්ල',
+        status: 'confirmed',
+        location: 'pending',
+        contacts: [
+            { name: 'Angela', phone: '077 279 8149' },
         ]
     },
 

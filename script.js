@@ -1,14 +1,14 @@
 const adminGrid = document.getElementById('admin-grid');
 
 const renderAdminCards = (data) => {
-    adminGrid.innerHTML = '';
+    adminGrid.innerHTML = ''; 
 
     data.forEach(admin => {
         const statusClass = admin.status === 'confirmed' ? 'status-confirmed' : 'status-pending';
         const statusText = admin.status === 'confirmed' ? '✔️ Verified' : '🕒 Pending';
 
         let contactHTML = '';
-        let searchContactData = '';
+        let searchContactData = ''; 
 
         if (admin.contacts && admin.contacts.length > 0) {
             admin.contacts.forEach(contact => {
@@ -51,7 +51,6 @@ const renderAdminCards = (data) => {
         }
 
         let locationHTML = ''; 
-
         if (admin.location === 'pending') {
             locationHTML = `
                 <p class="small text-muted" style="margin-top: 5px;">
@@ -78,7 +77,8 @@ const renderAdminCards = (data) => {
             `;
         }
 
-        const searchData = `${admin.area.toLowerCase()} ${searchContactData} ${admin.status} ${admin.location}`;
+        const searchData = `${admin.area.toLowerCase()} ${searchContactData} ${admin.status.toLowerCase()} ${admin.location.toLowerCase()}`;
+        
         const cardHTML = `
             <div class="admin-card" data-search="${searchData}">
                 <strong>🗺️ ${admin.area}</strong>
