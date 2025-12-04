@@ -19,7 +19,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'pending',
         location: 'pending',
         contacts: [
-            { name: 'Unknown', phone: '+94 72 403 6164' }
+            { name: 'Ayana Agni', phone: '+94 72 403 6164' }
 
         ]
     },
@@ -192,17 +192,7 @@ const ADMIN_CONTACT_DATA = [
         ]
     },
 
-    // --- Anuradhapura ---
-    {
-        area: 'Anuradhapura - අනුරාධපුරය',
-        status: 'pending',
-        location: 'pending',
-        contacts: [
-            { name: 'Unknown', phone: '+94 76 805 9316' },
-            { name: 'Unknown', phone: '+94 77 237 6085' },
-            { name: 'Unknown', phone: '+94 76 650 6621' }
-        ]
-    },
+    // --- Anuradhapura --- removed
 
     // --- Halawatha ---
     {
