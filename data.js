@@ -16,7 +16,7 @@ const ADMIN_CONTACT_DATA = [
     // --- Homagama ---
     {
         area: 'Homagama - හෝමාගම',
-        status: 'pending',
+        status: 'confirmed',
         location: 'pending',
         contacts: [
             { name: 'Ayana Agni', phone: '+94 72 403 6164' }

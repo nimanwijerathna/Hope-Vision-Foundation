@@ -155,27 +155,38 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-// script.js (Simplified & Corrected Logic Flow)
-
-// ... (Your Existing Code for adminGrid, renderAdminCards, searchBar, etc.)
+// Data to exclude for the Area Count
+const EXCLUDED_AREA_NAME = "General Help";
 
 // --- Metric Calculation Function ---
-const calculateAdminMetrics = (data) => {
-    const totalAreaCount = data.length;
-    let totalAdminCount = 0;
+const calculateAdminMetrics = (areaData) => {
+    const uniqueAdmins = new Set(); 
+    
+    const includedAreas = [];
 
-    data.forEach(areaObject => {
-        // We are counting the number of contacts/admins in each area object
-        totalAdminCount += areaObject.contacts ? areaObject.contacts.length : 0;
+    areaData.forEach(areaObject => {
+        
+        const areaName = areaObject.name || ''; 
+        
+        if (areaName.toLowerCase() !== EXCLUDED_AREA_NAME.toLowerCase()) {
+            includedAreas.push(areaObject);
+            const contacts = areaObject.contacts || [];
+            
+            contacts.forEach(admin => {
+                const uniqueKey = admin.email || admin.id || admin.name; 
+                
+                if (uniqueKey) {
+                    uniqueAdmins.add(uniqueKey);
+                }
+            });
+        }
     });
 
     return {
-        totalAreas: totalAreaCount,
-        totalAdmins: totalAdminCount
+        totalAreas: includedAreas.length, 
+        totalAdmins: uniqueAdmins.size 
     };
 };
-
-renderAdminCards(ADMIN_CONTACT_DATA); 
 
 const areaCountEl = document.getElementById('area-count');
 const adminCountEl = document.getElementById('admin-count');
