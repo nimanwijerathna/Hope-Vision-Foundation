@@ -179,8 +179,8 @@ header p {
 
 .latest-update {
     margin-top: 10px;
-    width: 300px; 
-    height: 280px; 
+    width: 300px;
+    height: 280px;
     box-shadow: var(--shadow);
     max-width: fit-content;
     overflow: hidden;
@@ -188,8 +188,8 @@ header p {
 
 .latest-update img {
     max-width: 100%;
-    height: auto;   
-    display: block;  
+    height: auto;
+    display: block;
 }
 
 /* Countdown Timer */
@@ -325,6 +325,54 @@ header p {
     border: 2px solid var(--blue);
     min-height: 850px;
     box-shadow: var(--shadow);
+}
+
+.metrics-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 35px;
+    padding-top: 15px;
+}
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+    padding: 20px 30px;
+    border-radius: 12px;
+
+    background: var(--light);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08),
+        0 0 1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.metric-item .number {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.metrics-container .metric-item:nth-child(1) .number {
+    color: var(--blue);
+}
+
+.metrics-container .metric-item:nth-child(2) .number {
+    color: var(--green);
+}
+
+.metric-item .label {
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.metric-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 2px var(--blue);
 }
 
 /* Admin Cards Grid */

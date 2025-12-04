@@ -154,3 +154,37 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+// script.js (Simplified & Corrected Logic Flow)
+
+// ... (Your Existing Code for adminGrid, renderAdminCards, searchBar, etc.)
+
+// --- Metric Calculation Function ---
+const calculateAdminMetrics = (data) => {
+    const totalAreaCount = data.length;
+    let totalAdminCount = 0;
+
+    data.forEach(areaObject => {
+        // We are counting the number of contacts/admins in each area object
+        totalAdminCount += areaObject.contacts ? areaObject.contacts.length : 0;
+    });
+
+    return {
+        totalAreas: totalAreaCount,
+        totalAdmins: totalAdminCount
+    };
+};
+
+renderAdminCards(ADMIN_CONTACT_DATA); 
+
+const areaCountEl = document.getElementById('area-count');
+const adminCountEl = document.getElementById('admin-count');
+
+if (areaCountEl && adminCountEl) {
+    const metrics = calculateAdminMetrics(ADMIN_CONTACT_DATA);
+
+    areaCountEl.textContent = metrics.totalAreas;
+    adminCountEl.textContent = metrics.totalAdmins;
+} else {
+    console.error("Metric display elements not found in the DOM.");
+}

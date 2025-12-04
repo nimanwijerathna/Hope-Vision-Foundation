@@ -65,7 +65,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Nethmi Silva', phone: '+94 76 983 9613' }
+            { name: 'Nethmi Silva', phone: '+94 76 151 7708' }
         ]
     },
 
@@ -188,7 +188,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'pending',
         location: 'pending',
         contacts: [
-            { name: 'Unknown', phone: '+94 76 549 4808' }
+            { name: 'Kasuni Nimesha', phone: '+94 76 549 4808' }
         ]
     },
 
