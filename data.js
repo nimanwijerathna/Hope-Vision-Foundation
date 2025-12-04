@@ -155,7 +155,7 @@ const ADMIN_CONTACT_DATA = [
     {
         area: 'Panadura - පානදුර',
         status: 'confirmed',
-        location: 'pending',
+        location: 'https://maps.google.com/maps?q=Crest%2BComputer%2BAcademy%2B186%2BKiriberiya%2BRd%2C%2BOluvila%2C%2B002500%2C%2BWestern%2C%2BLK&sll=6.71319554,79.92956755',
         contacts: [
             { name: 'Senithu Piumajith', phone: '+94 76 811 0262' }
         ]
