@@ -160,13 +160,13 @@ const EXCLUDED_AREA_NAME = "General Help";
 
 // --- Metric Calculation Function ---
 const calculateAdminMetrics = (areaData) => {
-    const uniqueAdmins = new Set(); 
-    
+    const uniqueAdmins = new Set();
     const includedAreas = [];
 
     areaData.forEach(areaObject => {
         
-        const areaName = areaObject.name || ''; 
+        // **CORRECTION HERE: Use areaObject.area instead of areaObject.name**
+        const areaName = areaObject.area || ''; 
         
         if (areaName.toLowerCase() !== EXCLUDED_AREA_NAME.toLowerCase()) {
             includedAreas.push(areaObject);

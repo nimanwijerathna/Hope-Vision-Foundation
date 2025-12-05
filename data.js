@@ -3,11 +3,10 @@ const ADMIN_CONTACT_DATA = [
     {
         area: 'Kadawatha - කඩවත',
         status: 'confirmed',
-        location: 'pending',
+        location: 'https://maps.app.goo.gl/howmRHXhLUo8mf866',
         contacts: [
             { name: 'Sewwandi Mayadunna', phone: '+94 71 362 8859' },
-            { name: 'Gayashi Hasinika', phone: '+94 76 134 3005' },
-            { name: 'Deepadi Gunawardhane', phone: '+94 75 829 3721' }
+            { name: 'Gayashi Hasinika', phone: '+94 76 134 3005' }
         ]
     },
 
