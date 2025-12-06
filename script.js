@@ -60,7 +60,7 @@ const renderAdminCards = (data) => {
         } else if (admin.location === 'whatsapp') {
             locationHTML = `
                 <p style="margin-top: 5px;">
-                    <a href="https://chat.whatsapp.com/B6SDrjsTXwM6vekx9zZmRX?mode=hqrt3" target="_blank"
+                    <a href="https://chat.whatsapp.com/I5yMSaER6t93EtfgcgJneK?mode=hqrt3" target="_blank"
                         style="color:#25D366; font-weight: 600; text-decoration: none;">
                         🔗 Official Whatsapp Group
                     </a>
