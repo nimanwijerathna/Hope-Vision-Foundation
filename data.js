@@ -29,9 +29,6 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Poorna', phone: '+94 75 737 4508' },
-            { name: 'Vibodha', phone: '+94 74 017 9049' },
-            { name: 'Prathibha Indumini', phone: '+94 71 250 7238' },
             { name: 'Dulneth Nimsara', phone: '+94 76 285 6553' }
         ]
     },
