@@ -32,7 +32,7 @@ const ADMIN_CONTACT_DATA = [
             { name: 'Poorna', phone: '+94 75 737 4508' },
             { name: 'Vibodha', phone: '+94 74 017 9049' },
             { name: 'Prathibha Indumini', phone: '+94 71 250 7238' },
-            { name: 'Unknown', phone: '+94 75 883 0172' }
+            { name: 'Dulneth Nimsara', phone: '+94 76 285 6553' }
         ]
     },
 
@@ -44,6 +44,16 @@ const ADMIN_CONTACT_DATA = [
         contacts: [
             { name: 'Angela', phone: '+94 77 279 8149' },
             { name: 'Hoshani Peiris', phone: '+94 76 647 4439' }
+        ]
+    },
+
+    // --- මාලබේ ---
+    {
+        area: 'Malabe - මාලබේ',
+        status: 'confirmed',
+        location: 'pending',
+        contacts: [
+            { name: 'Dilshan Madhuka', phone: '+94 75 424 4592' },
         ]
     },
 
@@ -113,7 +123,7 @@ const ADMIN_CONTACT_DATA = [
     {
         area: 'Kurunegala - කුරුණෑගල',
         status: 'confirmed',
-        location: 'pending',
+        location: 'https://maps.app.goo.gl/LbNaZBf6hZTDvgKy9',
         contacts: [
             { name: 'Damith', phone: '+94 71 017 0138' },
             { name: 'Unkown', phone: '+94 72 929 7222' }
@@ -146,7 +156,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Thilaksha Dilrukshi', phone: '+94 71 254 0196' }, 
+            { name: 'Thilaksha Dilrukshi', phone: '+94 71 254 0196' },
             { name: 'Gimhan', phone: '+94 70 469 4575' },
         ]
     },
@@ -184,7 +194,7 @@ const ADMIN_CONTACT_DATA = [
     // --- Veyangoda ---
     {
         area: 'Veyangoda - වේයන්ගොඩ',
-        status: 'pending',
+        status: 'confirmed',
         location: 'pending',
         contacts: [
             { name: 'Kasuni Nimesha', phone: '+94 76 549 4808' }
@@ -222,7 +232,7 @@ const ADMIN_CONTACT_DATA = [
             { name: 'Mihansa Sadewmi', phone: '+94 74 000 4794' }
         ]
     },
-    
+
     // --- Kirindiwela ---
     {
         area: 'Kirindiwela - කිරිඳිවැල',
@@ -232,7 +242,7 @@ const ADMIN_CONTACT_DATA = [
             { name: 'Dulneth Nimsara', phone: '+94 76 285 6553' }
         ]
     },
-    
+
     // --- Borella ---
     {
         area: 'Borella - බොරැල්ල',
@@ -240,6 +250,86 @@ const ADMIN_CONTACT_DATA = [
         location: 'pending',
         contacts: [
             { name: 'Angela', phone: '+94 77 279 8149' },
+        ]
+    },
+
+    // --- කඳාන ---
+    {
+        area: 'Kadana - කඳාන',
+        status: 'confirmed',
+        location: 'pending',
+        contacts: [
+            { name: 'Sonali Fernando', phone: '+94 75 916 6961' },
+        ]
+    },
+
+    // --- බත්තරමුල්ල ---
+    {
+        area: 'Battaramulla - බත්තරමුල්ල',
+        status: 'confirmed',
+        location: 'pending',
+        contacts: [
+            { name: 'Dilshan Madhuka', phone: '+94 75 424 4592' },
+        ]
+    },
+
+    // --- මොරටුව ---
+    {
+        area: 'Moratuwa - මොරටුව',
+        status: 'pending',
+        location: 'pending',
+        contacts: [
+            { name: 'Unknown', phone: '+94 75 964 4290' },
+        ]
+    },
+
+    // --- පිළියන්දල ---
+    {
+        area: 'Piliyandala - පිළියන්දල',
+        status: 'confirmed',
+        location: 'pending',
+        contacts: [
+            { name: 'Vihara', phone: '+94 72 087 6458' },
+        ]
+    },
+
+    // --- කිරිබත්ගොඩ ---
+    {
+        area: 'Kiribathgoda - කිරිබත්ගොඩ',
+        status: 'pending',
+        location: 'pending',
+        contacts: [
+            { name: 'Unknown', phone: '+94 75 669 2753' },
+        ]
+    },
+
+    // --- හොරණ ---
+    {
+        area: 'Horana - හොරණ',
+        status: 'confirmed',
+        location: 'pending',
+        contacts: [
+            { name: 'Dias', phone: '+94 70 607 7082' },
+        ]
+    },
+
+    // --- අම්බලන්තොට ---
+    {
+        area: 'Ambalanthota - අම්බලන්තොට',
+        status: 'pending',
+        location: 'pending',
+        contacts: [
+            { name: 'Unknown', phone: '+94 76 750 4483' },
+        ]
+    },
+
+    // --- රාජගිරිය ---
+    {
+        area: 'Rajagiriya - රාජගිරිය',
+        status: 'confirmed',
+        location: 'pending',
+        contacts: [
+            { name: 'Dilshan Madhuka', phone: '+94 75 424 4592' },
         ]
     },
 
