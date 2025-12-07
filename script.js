@@ -114,44 +114,67 @@ searchBar.addEventListener('keyup', function () {
 
 // Countdown Timer 
 function updateCountdown() {
-    const targetDate = new Date('2025-12-15T20:00:00').getTime();
+    // Set the target date and time. Note: '24:00:00' is equivalent to the next day at '00:00:00'
+    const targetDate = new Date('2025-12-12T24:00:00').getTime(); // Changed to 00:00:00 for consistency
     const now = new Date().getTime();
     const distance = targetDate - now;
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    const countdownHtml = `
-                <div class="countdown-item">
-                    <span class="number">${days}</span>
-                    <span class="label">Days</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="number">${hours}</span>
-                    <span class="label">Hours</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="number">${minutes}</span>
-                    <span class="label">Mins</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="number">${seconds}</span>
-                    <span class="label">Secs</span>
-                </div>
-            `;
-
+    // Get the HTML elements
     const countdownElement = document.getElementById('countdown');
-    if (countdownElement) {
-        countdownElement.innerHTML = countdownHtml;
+    const formContainer = document.getElementById('donation-form'); // Get the form container
 
-        if (distance < 0) {
-            countdownElement.innerHTML = '<p style="grid-column: 1/-1; color: var(--red);">🎉 Campaign Ended!</p>';
+    // Check if the campaign has ended
+    if (distance < 0) {
+        // 1. Display the 'Campaign Ended' message in the countdown area
+        if (countdownElement) {
+            countdownElement.innerHTML = '<strong style="grid-column: 1/-1; color: var(--red);">Campaign Ended! Thank you for your valuable contribution!</strong>';
+        }
+
+        // 2. Hide the Google Form container
+        if (formContainer) {
+            // A professional way is to add a class that hides the element and potentially displays a message
+            formContainer.style.display = 'none'; 
+            // Optional: You could insert a message here instead of the form
+        }
+
+    } else {
+        // Campaign is still active: Calculate and display the countdown
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        const countdownHtml = `
+            <div class="countdown-item">
+                <span class="number">${days}</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="countdown-item">
+                <span class="number">${hours}</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="countdown-item">
+                <span class="number">${minutes}</span>
+                <span class="label">Mins</span>
+            </div>
+            <div class="countdown-item">
+                <span class="number">${seconds}</span>
+                <span class="label">Secs</span>
+            </div>
+        `;
+
+        if (countdownElement) {
+            countdownElement.innerHTML = countdownHtml;
+        }
+
+        // Ensure the form is visible if it was hidden previously (e.g., on page load before first check)
+        if (formContainer) {
+             formContainer.style.display = ''; // Reset display style
         }
     }
 }
 
+// Initial call and set interval
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
@@ -199,3 +222,104 @@ if (areaCountEl && adminCountEl) {
 } else {
     console.error("Metric display elements not found in the DOM.");
 }
+
+// --- News Data ---
+let currentSlideIndex = 0;
+const SLIDE_INTERVAL_MS = 6000; 
+
+function renderNewsSlider() {
+    const newsContainer = document.getElementById('news-section');
+    const dotContainer = document.getElementById('slider-dots');
+
+    if (!newsContainer || !Array.isArray(newsData) || newsData.length === 0) {
+        if (newsContainer) newsContainer.innerHTML = '<p>No news updates currently available.</p>';
+        return;
+    }
+
+    const sortedNews = newsData.sort((a, b) => new Date(b.date) - new Date(a.date));
+    let newsHtml = '';
+    let dotHtml = '';
+
+    sortedNews.forEach((item, index) => {
+        const imageStyle = item.image ? 
+            `style="background-image: url('${item.image}');"` : 
+            '';
+        
+        const titleHtml = item.link ?
+             `<h3 class="news-title"><a href="${item.link}" target="_blank">${item.title}</a></h3>` :
+             `<h3 class="news-title">${item.title}</h3>`;
+             
+        const actionButtonHtml = item.link ?
+            `<a href="${item.link}" target="_blank" class="news-read-more button-style">රු 25,000 දීමනාව ලබා ගැනීමේ අයදුම් පත්‍රය</a>` :
+            '';
+
+        const formattedDate = new Date(item.date).toLocaleDateString('en-US', { 
+            year: 'numeric', month: 'short', day: 'numeric' 
+        });
+
+        newsHtml += `
+            <div class="news-item slide" data-index="${index}">
+                <div class="news-image-wrapper" ${imageStyle}>
+                    </div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span class="news-date">${formattedDate}</span>
+                    </div>
+                    ${titleHtml}
+                    <p class="news-description">${item.description}</p>
+                    <div class="news-footer"> 
+                        ${actionButtonHtml}  
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        dotHtml += `<span class="dot" data-index="${index}"></span>`;
+    });
+
+    newsContainer.innerHTML = newsHtml;
+    dotContainer.innerHTML = dotHtml;
+
+    setupSlider();
+}
+
+// 2. Core Slider Functionality (With essential link fix)
+function setupSlider() {
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const newsSection = document.getElementById('news-section');
+    
+    // Select the links *after* the content has been rendered
+    const readMoreLinks = document.querySelectorAll('.news-read-more'); 
+
+    if (totalSlides === 0 || !newsSection) return;
+
+    // Function to show the specific slide (Keep existing logic)
+    const showSlide = (index) => {
+        currentSlideIndex = (index + totalSlides) % totalSlides; 
+        const offset = -currentSlideIndex * 100; 
+        newsSection.style.transform = `translateX(${offset}%)`;
+    };
+
+    // Initial display
+    showSlide(currentSlideIndex);
+
+    // Automatic transition function
+    const autoSlide = () => {
+        showSlide(currentSlideIndex + 1);
+    };
+
+    // Set the interval and handle dot clicks (Keep existing logic)
+    setInterval(autoSlide, SLIDE_INTERVAL_MS);
+    
+    // *** CRITICAL LINK FIX: Prevent link clicks from advancing the slider ***
+    readMoreLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            // Stops the click event from reaching the parent slide element
+            e.stopPropagation(); 
+        });
+    });
+}
+
+// Call the rendering function on load
+document.addEventListener('DOMContentLoaded', renderNewsSlider);
