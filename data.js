@@ -27,7 +27,7 @@ const ADMIN_CONTACT_DATA = [
     {
         area: 'Gampaha - ගම්පහ',
         status: 'confirmed',
-        location: 'pending',
+        location: 'https://maps.app.goo.gl/AB3ZctxfwUvgW5z28',
         contacts: [
             { name: 'Dulneth Nimsara', phone: '+94 76 285 6553' }
         ]
@@ -198,7 +198,15 @@ const ADMIN_CONTACT_DATA = [
         ]
     },
 
-    // --- Anuradhapura --- removed
+    // --- Anuradhapura ---
+    {
+        area: 'Anuradhapura - අනුරාධපුර',
+        status: 'pending',
+        location: 'pending',
+        contacts: [
+            { name: 'Unknown', phone: '+94 74 132 4090' }
+        ]
+    },
 
     // --- Halawatha ---
     {
