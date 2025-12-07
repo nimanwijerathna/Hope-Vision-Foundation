@@ -283,43 +283,5 @@ function renderNewsSlider() {
     setupSlider();
 }
 
-// 2. Core Slider Functionality (With essential link fix)
-function setupSlider() {
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
-    const newsSection = document.getElementById('news-section');
-    
-    // Select the links *after* the content has been rendered
-    const readMoreLinks = document.querySelectorAll('.news-read-more'); 
-
-    if (totalSlides === 0 || !newsSection) return;
-
-    // Function to show the specific slide (Keep existing logic)
-    const showSlide = (index) => {
-        currentSlideIndex = (index + totalSlides) % totalSlides; 
-        const offset = -currentSlideIndex * 100; 
-        newsSection.style.transform = `translateX(${offset}%)`;
-    };
-
-    // Initial display
-    showSlide(currentSlideIndex);
-
-    // Automatic transition function
-    const autoSlide = () => {
-        showSlide(currentSlideIndex + 1);
-    };
-
-    // Set the interval and handle dot clicks (Keep existing logic)
-    setInterval(autoSlide, SLIDE_INTERVAL_MS);
-    
-    // *** CRITICAL LINK FIX: Prevent link clicks from advancing the slider ***
-    readMoreLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            // Stops the click event from reaching the parent slide element
-            e.stopPropagation(); 
-        });
-    });
-}
-
 // Call the rendering function on load
 document.addEventListener('DOMContentLoaded', renderNewsSlider);
