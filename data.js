@@ -65,15 +65,7 @@ const ADMIN_CONTACT_DATA = [
         ]
     },
 
-    // --- Negombo ---
-    {
-        area: 'Negombo - මීගමුව',
-        status: 'confirmed',
-        location: 'pending',
-        contacts: [
-            { name: 'Nethmi Silva', phone: '+94 76 151 7708' }
-        ]
-    },
+    // --- Negombo ---removed
 
     // --- Ragama ---
     {
