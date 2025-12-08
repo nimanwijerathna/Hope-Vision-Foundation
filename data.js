@@ -291,7 +291,7 @@ const ADMIN_CONTACT_DATA = [
     {
         area: 'Kiribathgoda - කිරිබත්ගොඩ',
         status: 'confirmed',
-        location: 'pending',
+        location: 'https://maps.app.goo.gl/h1aPBGDz2PrHSywW9',
         contacts: [
             { name: 'Savithru Owadani', phone: '+94 75 669 2753' },
         ]
