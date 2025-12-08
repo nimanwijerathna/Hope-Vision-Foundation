@@ -85,15 +85,7 @@ const ADMIN_CONTACT_DATA = [
         ]
     },
 
-    // --- Mathugama ---
-    {
-        area: 'Mathugama - මතුගම',
-        status: 'confirmed',
-        location: 'pending',
-        contacts: [
-            { name: 'Buddhi Amalka', phone: '+94 77 644 1640' }
-        ]
-    },
+    // --- Mathugama ---removed
 
     // --- Kandy ---
     {
