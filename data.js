@@ -242,7 +242,7 @@ const ADMIN_CONTACT_DATA = [
     {
         area: 'Kirindiwela - කිරිඳිවැල',
         status: 'confirmed',
-        location: 'https://maps.app.goo.gl/Hb61NkoQctRgq4ra6?g_st=atm',
+        location: 'https://maps.app.goo.gl/FZcVyzfBiJdzLvsu7',
         contacts: [
             { name: 'Dulneth Nimsara', phone: '+94 76 285 6553' }
         ]
