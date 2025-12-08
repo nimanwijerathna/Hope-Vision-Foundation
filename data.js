@@ -182,7 +182,7 @@ const ADMIN_CONTACT_DATA = [
     // --- Anuradhapura ---
     {
         area: 'Anuradhapura - අනුරාධපුර',
-        status: 'pending',
+        status: 'confirmed',
         location: 'pending',
         contacts: [
             { name: 'Sankalpa', phone: '+94 74 132 4090' }
