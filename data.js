@@ -75,17 +75,6 @@ const ADMIN_CONTACT_DATA = [
         ]
     },
 
-    // --- Kiribathgoda ---
-    {
-        area: 'Kiribathgoda - කිරිබත්ගොඩ',
-        status: 'confirmed',
-        location: 'pending',
-        contacts: [
-            { name: 'Angela', phone: '+94 77 279 8149' },
-            { name: 'Hoshani Peiris', phone: '+94 76 647 4439' }
-        ]
-    },
-
     // --- Ragama ---
     {
         area: 'Ragama - රාගම',
@@ -301,10 +290,10 @@ const ADMIN_CONTACT_DATA = [
     // --- කිරිබත්ගොඩ ---
     {
         area: 'Kiribathgoda - කිරිබත්ගොඩ',
-        status: 'pending',
+        status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Unknown', phone: '+94 75 669 2753' },
+            { name: 'Savithru Owadani', phone: '+94 75 669 2753' },
         ]
     },
 
