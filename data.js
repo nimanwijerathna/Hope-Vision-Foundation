@@ -60,7 +60,7 @@ const ADMIN_CONTACT_DATA = [
         status: 'confirmed',
         location: 'pending',
         contacts: [
-            { name: 'Sasindu Prabhashwara', phone: '+94 71 654 3532' },
+            { name: 'Sasindu Prabhashwara', phone: '+94 71 485 4750' },
             { name: 'Chamidu Laksitha', phone: '+94 71 654 3532' }
         ]
     },
