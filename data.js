@@ -109,10 +109,10 @@ const ADMIN_CONTACT_DATA = [
     {
         area: 'Kurunegala - කුරුණෑගල',
         status: 'confirmed',
-        location: 'https://maps.app.goo.gl/LbNaZBf6hZTDvgKy9',
+        location: 'https://maps.app.goo.gl/iLUCwWcTXCGNw2fb9',
         contacts: [
             { name: 'Damith', phone: '+94 71 017 0138' },
-            { name: 'Unkown', phone: '+94 72 929 7222' }
+            { name: 'M.Safran', phone: '+94 72 929 7222' }
         ]
     },
 
