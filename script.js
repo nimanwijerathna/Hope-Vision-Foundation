@@ -283,5 +283,31 @@ function renderNewsSlider() {
     setupSlider();
 }
 
-// Call the rendering function on load
+// Privacy policy
 document.addEventListener('DOMContentLoaded', renderNewsSlider);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('privacyModal');
+    const openBtn = document.getElementById('openPrivacyModal');
+    const closeBtn = document.getElementById('closePrivacyModal');
+
+    if (modal && openBtn && closeBtn) {
+        openBtn.onclick = function(e) {
+            e.preventDefault(); 
+            modal.style.display = "block";
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+            document.body.style.overflow = 'auto'; 
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = 'auto';
+            }
+        }
+    }
+});
