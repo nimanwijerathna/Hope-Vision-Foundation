@@ -265,7 +265,7 @@ const ADMIN_CONTACT_DATA = [
     {
         area: 'Piliyandala - පිළියන්දල',
         status: 'confirmed',
-        location: 'pending',
+        location: 'https://maps.app.goo.gl/qApchT4odZgWzAEH6',
         contacts: [
             { name: 'Vihara', phone: '+94 72 087 6458' },
         ]
