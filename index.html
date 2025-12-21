@@ -22,8 +22,19 @@
 <body>
 
     <!-- Sticky CTA Bar -->
-    <div id="sticky-bar">
+    <!-- <div id="sticky-bar">
         <a href="#donation-form">Register Your Donation Now</a>
+    </div> -->
+
+    <div id="sticky-bar"
+        style="width: 100%; overflow: hidden; background: #f0fdf4; padding: 10px 0; border-top: 1px solid #25D366; border-bottom: 1px solid var(--green);">
+        <div class="flow-container">
+            <span style="font-family: sans-serif; font-weight: bold; color: var(--blue); margin-right: 50px;">
+                Know someone who needs help? Contact us if you know any affected students or schools.
+            </span>
+            <a href="https://wa.me/94740179049?text=I%20know%20someone%20who%20needs%20help"
+                class="btn btn-success">WhatsApp: +94 740179049</a>
+        </div>
     </div>
 
     <!-- Hero Section -->
@@ -169,7 +180,7 @@
                         හි රහස්‍යතා ප්‍රතිපත්තියට යටත් වේ.</li>
                 </ul>
                 <hr>
-                <h2>4. දත්ත රඳවා තබා ගැනීම සහ ඉවත් කිරීම (Data Retention)</h2>
+                <h2>4. දත්ත රඳවා තබා ගැනීම (Data Retention)</h2>
                 <ul>
                     <li>රඳවා තබා ගැනීම: නීත්‍යානුකූල අවශ්‍යතා සහ පරිත්‍යාග වාර්තා පවත්වා ගැනීම සඳහා, ඔබගේ දත්ත
                         සුරක්ෂිතව රඳවා තබා ගනු ලැබේ.
@@ -195,6 +206,28 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+
+<style>
+    @keyframes flowText {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .flow-container {
+        display: inline-block;
+        white-space: nowrap;
+        animation: flowText 15s linear infinite;
+    }
+
+    .flow-container:hover {
+        animation-play-state: paused;
+    }
+</style>
 </body>
 
 </html>
